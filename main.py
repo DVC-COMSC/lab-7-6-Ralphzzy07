@@ -6,6 +6,9 @@ def getInput():
     ########################################
     """
 
+    user_input = input("Enter multiple values separated by spaces: ")
+    return list(map(int, user_input.split()))
+
 
 def makeReverse(numbers):
     """
@@ -13,6 +16,11 @@ def makeReverse(numbers):
     Code Your Program here
     ########################################
     """
+
+    reverse_list = []
+    while numbers:
+        reverse_list.append(numbers.pop())
+    return reverse_list
 
 
 def main():
